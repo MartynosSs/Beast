@@ -1,0 +1,21 @@
+$containerWidth: 915px;
+$BaseFontSize: 16px;
+
+
+// colors
+
+$Black: #292929;
+$Pink: #E01F3D; 
+$Background: #F5F5F5;
+
+.features {
+    display: flex;
+}
+
+.features__item {
+    margin-right: 19px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
