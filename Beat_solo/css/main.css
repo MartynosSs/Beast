@@ -96,7 +96,7 @@ img {
 }
 
 .hero__container {
-  background: url(../../img/Headphones.png) right center no-repeat;
+  background: url(../img/Headphones.png) right center no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,7 +428,7 @@ img {
   }
 }
 .benefits__item:before {
-  content: url(../../img/Separator.png);
+  content: url(../img/Separator.png);
   position: absolute;
   top: 3.4375rem;
   right: 0;
@@ -762,7 +762,7 @@ img {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible::before {
-  background: url(../../img/Check.png) center center no-repeat;
+  background: url(../img/Check.png) center center no-repeat;
 }
 
 .radio__elem {
