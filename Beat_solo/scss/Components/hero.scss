@@ -44,9 +44,6 @@
 
 .hero__title-wrap {
     width: 36%;
-    &::before {
-            content: url("../../img/Headphones.png");
-        }
 
     @include tablets {
         width: 100%;

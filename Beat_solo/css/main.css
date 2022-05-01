@@ -165,7 +165,7 @@ img {
     text-align: center;
   }
   .hero__title-wrap::before {
-    content: url("../../img/Headphones_768.png");
+    content: url("../img/Headphones_768.png");
   }
 }
 
