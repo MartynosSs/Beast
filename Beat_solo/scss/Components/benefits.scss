@@ -1,3 +1,14 @@
+.benefits-section__container {
+    @include tablets {
+        width: 99%;
+    }
+
+    @include phones {
+        width: 95%;
+    }
+}
+
+
 .benefits {
     display: flex;
 
@@ -11,9 +22,13 @@
     padding: 0 3%;
     position: relative;
 
+    @include tablets {
+        padding: 0 0.4%;
+    }
+
     @include phones {
         padding: 0;
-        margin-bottom: rem(31px);
+        margin-bottom: rem(14px);
     }
 
     &:before {

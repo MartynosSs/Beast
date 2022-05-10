@@ -12,6 +12,8 @@ $Background: #F5F5F5;
 
 $tablets: 768px;
 $phones: 480px;
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Play:wght@400;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 
 @import "./media.scss";
 
@@ -23,7 +25,6 @@ $phones: 480px;
 
 // setups 
 
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Play:wght@400;700&display=swap');
 @import "./layout";
 
 // components
@@ -44,3 +45,5 @@ $phones: 480px;
 @import "./Components/fixed-menu.scss";
 @import "./Components/footer.scss";
 @import "./Components/burger.scss";
+@import "./Components/Product.scss";
+@import "./Components/dropdown.scss";

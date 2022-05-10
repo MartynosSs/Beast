@@ -1,0 +1,130 @@
+.product-container {
+    background: url(../img/head-shop.png) left center no-repeat;
+    padding: 5% 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 5;
+        background: none;
+    }
+
+
+}
+
+.product__title {
+    font-size: rem(36px);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+
+    @include tablets {
+        font-size: rem(28px);
+    }
+}
+
+
+
+.product__column {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+
+    @include tablets {
+        width: 100%;
+        align-items: center;
+
+
+    
+    }
+}
+
+
+.product-section {
+background: #F8FAF9;
+}
+
+.product__desc {
+    color: #666666;
+    margin-bottom: rem(27px);
+    padding-right: 7%;
+
+    @include tablets {
+        padding: 0;
+    }
+}
+
+.product__item-list {
+    display: flex;
+    margin-bottom: rem(24px);
+    justify-content: center;
+}
+
+.product__item-title {
+    color: #666666;
+}
+
+.product__item-desc {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product__item {
+     margin-right: rem(86px);
+}
+
+.product__buttons {
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.product-price {
+    font-size: rem(36px);
+    margin-right: rem(13px);
+
+    @include tablets {
+        margin-right: rem(40px);
+    }
+}
+
+.product-slider__arrow--direction--prev {
+    position: absolute;
+    left: 5%;
+    top: 42%;
+
+        @include tablets {
+            top: 38%;
+            left: 15%;
+        }
+
+        @include phones {
+            top: 37%;
+            left: 4%;
+        }
+
+
+
+}
+
+.product-slider__arrow--direction--next {
+    position: absolute;
+    right: 5%;
+    top: 42%;
+
+        @include tablets {
+            top:38%;
+            right: 15%;
+        }
+
+        @include phones {
+            top: 37%;
+            right: 4%;
+        }
+
+}

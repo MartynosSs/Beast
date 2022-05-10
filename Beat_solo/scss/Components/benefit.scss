@@ -15,7 +15,6 @@
     background: #F2F5F4;
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: rem(10px);
 
     @include phones {
         margin-bottom: 0;
@@ -36,10 +35,18 @@
     font-size: rem(24px);
     color: black;
     font-weight: bold;
-    margin-bottom: rem(5px);
+    margin-bottom: rem(15px);
+
+    @include phones {
+        margin-bottom: 5px;
+    }
 }
 
 .benefit__icon--sprite {
     top: 47%;
     left: 47%;
+}
+
+.benefit__img {
+    margin-bottom: rem(15px);
 }

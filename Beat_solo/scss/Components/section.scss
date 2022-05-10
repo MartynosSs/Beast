@@ -15,12 +15,13 @@
     color: black;
 }
 
-.order__section {
+.order-section {
     background: #181818;
 }
 
-.map__section {
+.map {
     display: block;
+    position: relative;
 }
 
 .map__img {

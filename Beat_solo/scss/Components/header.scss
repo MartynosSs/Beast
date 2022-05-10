@@ -2,12 +2,14 @@
 .header {
     display: flex;
     justify-content: space-between;
+    padding-right: rem(21px);
+
+    @include tablets {
+        margin-bottom: rem(46px);
+    }
 }
 
 .menu {
-    margin: 0 30px;
-    padding-top: 5px;
-
     @include tablets {
         display: none;
     }
@@ -69,3 +71,44 @@
     height: rem(14px);
     margin-right: rem(6px);
 }
+
+.menu--vertical {
+    font-size: 36px;
+    display: flex;
+    color: #fff;
+}
+
+.menu--vertical .menu__list {
+    font-size: 36px;
+    display: flex;
+    color: #fff;
+    text-align: center;
+    flex-direction: column;
+}
+
+.fullscreen-menu {
+  position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #333537;
+    flex-direction: column;
+    z-index: 1000;
+    overflow: hidden;
+    align-items: center;
+    display: none;
+    justify-content: center;
+
+}
+
+.fullscreen-menu__close {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    right: 5%;
+    top: 5%;
+    background: url(../img/close.png) right center no-repeat;
+}
+
+

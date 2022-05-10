@@ -91,9 +91,16 @@
 .form__buttons {
     margin-top: rem(30px);
     display: flex;
-    justify-content: center;
+
+    @include tablets {
+        justify-content: center;
+    }
 }
 
 .reviews__section__title {
-    margin-bottom: rem(35px);
+    margin-bottom: rem(25px);
+
+    @include phones {
+        font-size: rem(32px);
+    }
 }

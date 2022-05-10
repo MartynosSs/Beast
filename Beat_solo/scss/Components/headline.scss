@@ -1,9 +1,13 @@
 .headline {
     text-align: center;
+    
+    @include tablets {
+        margin-bottom: rem(52px);
+    }
 }
 
 .headline__title {
-    margin-bottom: rem(9px);
+    margin-bottom: rem(4px);
 
     @include phones {
         font-size: 32px;
@@ -11,8 +15,9 @@
 }
 
 .headline__subtitle {
-    padding: 0 18%;
+    padding: 0 16%;
     margin-bottom: rem(62px);
+    line-height: 1.2;
 
     @include phones {
         padding: 0 9%;;
