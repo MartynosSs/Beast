@@ -92,7 +92,7 @@ img {
 }
 
 .hero__container {
-  background: url(../../img/Headphones.png) right center no-repeat;
+  background: url(../img/Headphones.png) right center no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
