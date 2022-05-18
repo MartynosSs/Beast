@@ -1,0 +1,36 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: #313131;
+    display: none;
+    z-index: 1000;
+    overflow: hidden;
+
+    &.active {
+        display: flex;
+    }
+}
+
+
+.modal__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #FFF;
+    width: 309px;
+    height: 176px;
+    position: relative;
+    padding: 20px;
+    margin: auto;
+}
+
+.modal__content {
+    color: #000000;
+    margin-bottom: 18px;
+}
