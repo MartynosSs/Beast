@@ -9,7 +9,7 @@
     }
 }
 
-.menu {
+.nav__menu {
     @include tablets {
         display: none;
     }
@@ -22,7 +22,7 @@
     justify-content: center;
 }
 
-.menu__item {
+.nav__item {
     margin-right: rem(27px);
     margin-top: 10px;
 

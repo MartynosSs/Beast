@@ -1,0 +1,80 @@
+.menu {
+    position: relative;
+    background: url(../../img/Menu.png) center center / cover no-repeat;
+    color: #fff;
+}
+
+.menu__acco {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    @include phones {
+        width: 100%;
+        justify-content: flex-end;
+
+    }
+}
+
+.menu__title {
+    position: absolute;
+    left: rem(30px);
+    top: rem(30px);
+}
+
+.menu__item {
+    display: flex;
+    
+    @include phones {
+        &--active {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 3;
+        }
+    }
+    &--active {
+        .menu__desc {
+            opacity: 1;
+        }
+    }
+
+}
+
+.menu__button {
+    color: inherit;
+    width: 100px; 
+    position: relative;
+    
+    @include phones {
+        min-width: 90px;
+    }
+}
+
+.menu__button-text {
+    position: absolute;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    left: 50%;
+    bottom: rem(40px);
+    font-size: rem(36px);
+    white-space: nowrap;
+
+}
+
+
+.menu__content {
+    width: 0;
+    background: rgba(18, 19, 20, 0.8);
+    overflow: hidden;
+    transition: width 0.3s linear;
+}
+
+.menu__desc {
+    line-height: 1.8;
+    padding: rem(55px) rem(27px);
+}

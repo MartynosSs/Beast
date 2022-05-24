@@ -1,5 +1,15 @@
 .dropdown {
     margin-bottom: rem(20px);
+    position: relative;
+    display: inline-flex;
+
+    &:hover {
+.dropdown__menu {
+            left: 100%;
+            opacity: 1;
+
+        }
+    }
 
     @include tablets {
         display: none;
@@ -10,49 +20,21 @@
   height: rem(24px);
 }
 
-.dropdown__menu-two {
+
+.dropdown__menu {
     position: absolute;
-    display: none;
+    display: inline-flex;
     flex-direction: column;
+    left: -9999999px;
+    opacity: 0;
     background: #F2F5F4;
     padding: rem(25px) rem(25px);
     height: rem(294px);
     width: rem(273px);
     border-radius: rem(5px);
     border: 1px none;
-    top: 0%;
-    right: 2%;
-
-    &::before {
-    content: "";
-    display: block;
-    height: rem(294px);
-    position: absolute;
-    left: 0;
-    }
-
-}
-
-.dropdown__menu-one {
-    position: absolute;
-    display: none;
-    flex-direction: column;
-    background: #F2F5F4;
-    padding: rem(25px) rem(25px);
-    height: rem(294px);
-    width: rem(273px);
-    border-radius: rem(5px);
-    border: 1px none;
-    top: 0%;
-    right: 2%;
-
-    &::before {
-    content: "";
-    display: block;
-    height: rem(294px);
-    position: absolute;
-    left: 0;
-    }
+    top: 0;
+    transition: opacity .3s;
 
 }
 
