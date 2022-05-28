@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/main.css">
     <title>Beats</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -158,15 +160,15 @@
             </section>
             <section class="section product-section">
                 <div class="container product-container">
-                    <div id="left" class="product-slider__arrow">
-                        <img src="./img/left.png" alt="left" class="product-slider__arrow--direction--prev">
+                    <div class="slider__arrows">
+                        <a href="#" class="product-slider__arrow product-slider__arrow--direction--prev"></a>
+                        <a href="#" class="product-slider__arrow product-slider__arrow--direction--next"></a>
                     </div>
                     <div class="product__slider">
                         <ul class="slider__list" id="items">
                             <il class="slider__item">
                                 <div class="product__img-wrapper">
                                     <img src="./img/head-shoptablet.png" alt="Headphones_768" class="product__img">
-                                    <img src="./img/head-shoptablet.png" alt="" class="product__img-portable">
                                 </div>
                                 <div class="product__column">
                                     <div class="dropdown">
@@ -270,8 +272,6 @@
                             <il class="slider__item">
                                 <div class="product__img-wrapper">
                                     <img src="./img/Head-shop2.png" alt="Headphones_768" class="product__img">
-                                    <img src="./img/Head-shop2Small.png" alt="phones-head"
-                                        class="product__img-portable">
                                 </div>
                                 <div class="product__column">
                                     <div class="dropdown">
@@ -372,9 +372,6 @@
                                 </div>
                             </il>
                         </ul>
-                    </div>
-                    <div id="right" class="product-slider__arrow">
-                        <img src="./img/right.png" alt="right" class="product-slider__arrow--direction--next">
                     </div>
                 </div>
             </section>
@@ -684,39 +681,40 @@
                 <div class="container">
                     <h2 class="section__title form__section__title">закажите доставку</h2>
                     <form action="" class="form">
+                        <input type="hidden" name="to" value="somevar@mail.ru">
                         <div class="form__col">
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="name" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="phone" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Улица</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="street" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Дом</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="house" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Корпус</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="part" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Квартира</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="apart" class="form__input">
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Этаж</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" name="floor" class="form__input">
                                 </label>
                             </div>
                         </div>
@@ -724,7 +722,7 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Комментарий</div>
-                                    <textarea class="form__input form__input--textarea"></textarea>
+                                    <textarea name="comment" class="form__input form__input--textarea"></textarea>
                                 </label>
                             </div>
                             <div class="form__controls">
@@ -839,7 +837,7 @@
     </div>
     <div class="fullscreen-menu">
         <a href="#" class="fullscreen-menu__close"> </a>
-        <nav class="menu menu--vertical">
+        <nav class="menu--vertical">
             <ul class="menu__list">
                 <li class="nav__item">
                     <a href="#" class="menu__link">О нас</a>
@@ -870,12 +868,21 @@
             <div class="modal__content">
                 <p>Cообщение отправлено</p>
             </div>
-            <button class="button" id="formButton">ЗАКРЫТЬ</button>
+            <button class="button app-submit-button" id="formButton">ЗАКРЫТЬ</button>
         </div>
     </div>
-    <script src="./JQ.js"></script>
-    <script src="./horizon.js"></script>
-    <script src="./index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/horizon.js"></script>
+    <script src="./js/reviews.js"></script>
+    <script src="./js/team.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/ops.js"></script>
 
 </body>
 
