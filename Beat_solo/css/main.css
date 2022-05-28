@@ -101,7 +101,7 @@ img {
 }
 
 .hero__container {
-  background: url(../../img/Headphones.png) right center no-repeat;
+  background: url(../img/Headphones.png) right center no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,7 +184,7 @@ img {
     text-align: center;
   }
   .hero__content::before {
-    content: url("../../img/Headphones_768.png");
+    content: url("../img/Headphones_768.png");
     margin-bottom: 3.5rem;
   }
 }
@@ -1253,7 +1253,7 @@ img {
 }
 
 .product-slider__arrow {
-  background: url(../../img/right.png) center center no-repeat;
+  background: url(../img/right.png) center center no-repeat;
   background-size: contain;
   display: block;
   width: 15px;
@@ -1798,7 +1798,7 @@ img {
 
 .menu {
   position: relative;
-  background: url(../../img/Menu.png) center center/cover no-repeat;
+  background: url(../img/Menu.png) center center/cover no-repeat;
   color: #fff;
 }
 
